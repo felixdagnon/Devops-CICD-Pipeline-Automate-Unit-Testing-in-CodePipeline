@@ -103,7 +103,7 @@ This is the template.yml file which will create a lambda function and a API Gate
 
 ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/370f6195-96cd-4ee6-a995-58df61848517)
 
-## 4. Run unit tests.
+## 3. Run unit tests.
 
 In this section, you will create a CodeBuild project which refers to the buildspec.yml file you pushed in a previous section. CodeBuild will create a build against the latest commit of your CodeCommit repository and then run unit tests and static code analysis against the latest commit. Follow the steps below.
 
