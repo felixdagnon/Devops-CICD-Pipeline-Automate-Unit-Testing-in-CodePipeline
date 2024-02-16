@@ -150,7 +150,7 @@ test OK in the build console of pipeline
  
 ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/f75233f0-40cf-4f6f-a1af-c574f457e35c)
 
-test OK in the lambda console: lambda_function.py
+test OK in the lambda console: lambda_function.py is pushed in lambda console
 
 ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/68d769d2-965f-48ce-8e9e-abdff8a9fc3c)
 
