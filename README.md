@@ -110,7 +110,7 @@ In this section, I create test event in lambda console
 
 ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/157059ba-9d10-4e35-9797-f17090c3b5da)
 
-After running the test, for the designated country, the output is correct. The output extract the field country from the imput event
+After running the test, for the designated country, the output is correct. The output extract the field country from the input event
 
 ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/50e5e8b3-b0bb-46cf-87eb-2b90d65b48c2)
 
@@ -144,7 +144,17 @@ I add more test
 
 ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/48bcd593-9c29-4bb8-bfb4-2ec842dacac3)
 
+After running the test, for the designated country, the output is correct. The output extract the field country from the input event. 
+
+test OK in the build console of pipeline
  
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/f75233f0-40cf-4f6f-a1af-c574f457e35c)
+
+test OK in the lambda console
+
+
+
+
 
 
 
