@@ -26,9 +26,21 @@ A Test action this again could be CodeBuild running some unit tests against my c
 For our Deploy action, we have chosen AWS CloudFormation. We could use other AWS services like, Elastic Beanstalk, AWS CodeDeploy, or third parties.
 
 # What we will do in this part
+
 I created a continuous integration (CI) pipeline and automate the build and now I will automate unit testing process using AWS CodePipeline.
 
 I will also be able to set up a CI/CD pipeline that builds, tests my code every time there is a code change.
+
+## Devops — CICD Pipeline: Unit Test with Code Build
+
+Build phases
+
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/53b24539-c9b7-4f06-8915-c14c14f654e0)
+
+I will use buildspec.yml file
+
+
+
 
 
 
