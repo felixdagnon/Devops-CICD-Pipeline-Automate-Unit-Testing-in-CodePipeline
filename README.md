@@ -105,17 +105,53 @@ This is the template.yml file which will create a lambda function and a API Gate
 
 ## 3. Run unit tests.
 
-In this section, you will create a CodeBuild project which refers to the buildspec.yml file you pushed in a previous section. CodeBuild will create a build against the latest commit of your CodeCommit repository and then run unit tests and static code analysis against the latest commit. Follow the steps below.
+### Test1
+In this section, I create test event in lambda console
 
-On the UnitTest build project page, click Start build.
-Scroll down, to the Source section.
-You should see the dev branch is selected.
-Scroll down and click Start build. You should see that the build is in progress.
-Scroll down to the Build logs section, after a few seconds you will see log messages for the build as shown in the screenshot below. CodeBuild will finish building and running the unit tests in a few minutes.
-You can also see the pylint static analysis and the unit tests results in the logs details as shown in the screenshot below.
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/157059ba-9d10-4e35-9797-f17090c3b5da)
+
+After running the test, for the designated country, the output is correct. The output extract the field country from the imput event
+
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/50e5e8b3-b0bb-46cf-87eb-2b90d65b48c2)
+
+### Test2
+
+Suppose, I did not code it
+
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/09388d17-36e7-4593-9ef2-64196cda856f)
+
+After deployement in the Build console of pipeline the test is KO
+
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/1ca60177-8252-430d-874d-9d3e637c7d61)
+
+### Test3: Running the test using test_handler.py and Buildspec.yml
+
+lambda_function.py
+
+I code the name of the country
+
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/bc5ca70e-38e6-43e6-9a58-98540ca1c29e)
+
+ Buildspec.yml
+
+- python -m unittest discover tests: go to the tests folder to discover the test
+  
+ ![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/5fd7f273-cbe0-4a97-b975-79ac4e62fb08)
+
+test_handler.py 
+
+I add more test
+
+![image](https://github.com/felixdagnon/Devops-CICD-Pipeline-Automate-Unit-Testing-in-CodePipeline/assets/91665833/48bcd593-9c29-4bb8-bfb4-2ec842dacac3)
+
+ 
 
 
-To view the output from the build, open the Amazon S3 dashboard and click the Amazon S3 bucket with bucket name similar toREPLACE_WITH_YOUR_INITIALS-tempartifacts. Drill down into the folders and you will see the code coverage report and the other output files from the build.
+
+
+
+
+
 
 
 
